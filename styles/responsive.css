@@ -1,0 +1,53 @@
+@media (max-width: 600px) {
+	.header__top {
+		background-color: var(--blue);
+	}
+	.header__logo {
+		width: 96px;
+		height: 16px;
+	}
+	.header__logo img:first-child {
+		display: none;
+	}
+	.header__logo img:last-child {
+		display: block;
+	}
+	.header__language {
+		display: none;
+	}
+	.header__login {
+		display: none;
+	}
+	.header__liked {
+		border-radius: 10px;
+		width: 36px;
+		height: 36px;
+		background-color: #1570ef;
+	}
+	.header__add {
+		width: 36px;
+		height: 36px;
+		border-radius: 10px;
+	}
+	.header__add span {
+		display: none;
+	}
+	.header__add img {
+		display: block;
+	}
+	.header__burger span {
+		background-color: white;
+	}
+	.header__nav {
+		top: -400px;
+	}
+	.header__nav.active {
+		top: 48px;
+	}
+	.header__list {
+		flex-direction: column;
+		background: var(--blue);
+		align-items: start;
+		height: 100%;
+	}
+}
