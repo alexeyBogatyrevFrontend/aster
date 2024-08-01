@@ -6,11 +6,12 @@
 	--primary-blue: #1e385b;
 	--gray: #f2f7ff;
 	--light-blue: #e0edfd;
-	--hover-light-blue: #cbdfff;
+	--hover-light-blue: #d0e5ff;
 	--green: #00be5a;
+	--hover-grenn: #26c873;
 	--yellow: #f7d117;
 }
-/* zeroing */
+/* style reset */
 * {
 	padding: 0;
 	margin: 0;
@@ -99,6 +100,7 @@ h6 {
 	font-weight: inherit;
 }
 
+/* main classes */
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -115,12 +117,12 @@ h6 {
 	flex: 1 1 auto;
 }
 
-/* header */
+/* header styles */
 .header {
 	position: relative;
 	background-color: white;
 }
-/* header top */
+
 .header__top {
 	background-color: white;
 	position: relative;
@@ -223,7 +225,7 @@ h6 {
 	display: none;
 }
 .header__add:hover {
-	background-color: #009d49;
+	background-color: var(--hover-grenn);
 }
 .header__login {
 	width: fit-content;
@@ -242,7 +244,7 @@ h6 {
 .header__login:hover {
 	background-color: var(--hover-light-blue);
 }
-/* header nav */
+/* nav header */
 .header__nav {
 	position: absolute;
 	z-index: 1;
@@ -297,7 +299,7 @@ h6 {
 	border-radius: 22px;
 }
 
-/* promo */
+/* promo section */
 .promo {
 	padding: 80px 0;
 	background: linear-gradient(to right, #360002 0%, #cd3434 50%, #360002 100%);
