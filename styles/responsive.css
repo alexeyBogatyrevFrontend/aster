@@ -1,4 +1,8 @@
 @media (max-width: 768px) {
+	/* promo */
+	.promo__info {
+		gap: 64px;
+	}
 	/* footer */
 	.footer {
 		padding: 24px 0;
@@ -59,6 +63,44 @@
 		background: var(--blue);
 		align-items: start;
 		height: 100%;
+	}
+	/* promo */
+	.promo {
+		padding: 60px 0;
+	}
+	.promo__title {
+		text-align: left;
+		font-size: 32px;
+		line-height: 40px;
+		font-weight: 700;
+	}
+	.promo__title span {
+		padding: 0;
+		margin: 0;
+		background: none;
+		color: white;
+		font-size: 32px;
+		line-height: 36px;
+		font-weight: 700;
+	}
+	.promo__info {
+		margin: 0 0 40px 0;
+	}
+	.promo__info-item h3 {
+		margin: 0 0 8px 0;
+		font-size: 32px;
+		line-height: 36px;
+	}
+	.promo__info-item span {
+		font-size: 16px;
+		line-height: 18px;
+	}
+	.promo__btn {
+		width: 100%;
+		margin: 0 auto 80px auto;
+	}
+	.promo__cars {
+		margin: 0 0 20px 0;
 	}
 	/* footer */
 	.footer__left {
@@ -135,5 +177,16 @@
 	.footer__item.mobile .footer__privacy {
 		display: block;
 		text-align: center;
+	}
+}
+@media (max-width: 375px) {
+	.promo__title {
+		font-size: 30px;
+	}
+	.promo__title span {
+		font-size: 30px;
+	}
+	.promo__info {
+		gap: 32px;
 	}
 }
