@@ -26,4 +26,4 @@
 
 ## Просмотр
 
-- Посмотреть проект в браузере: [Перейти на сайт](https://www.openai.com)
+- Посмотреть проект в браузере: [Перейти на сайт](https://alexeybogatyrevfrontend.github.io/testTasks/aster/)
