@@ -102,6 +102,24 @@
 	.promo__cars {
 		margin: 0 0 20px 0;
 	}
+	/* faq */
+	.faq {
+		padding: 48px 0;
+	}
+	.faq__title {
+		font-size: 18px;
+		line-height: 24px;
+		text-align: center;
+	}
+	.faq__accordion-title {
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: 600;
+	}
+	.faq__accordion-content p {
+		font-size: 12px;
+		line-height: 16px;
+	}
 	/* footer */
 	.footer__left {
 		width: 100%;

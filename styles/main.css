@@ -3,7 +3,7 @@
 	--blue: #0066cc;
 	--red: #f04438;
 	--primary: #161a1f;
-	--primaryBlue: #1e385b;
+	--primary-blue: #1e385b;
 	--gray: #f2f7ff;
 	--light-blue: #e0edfd;
 	--hover-light-blue: #cbdfff;
@@ -373,6 +373,117 @@ h6 {
 }
 .promo__brands img {
 	max-width: 100%;
+}
+
+/* accordion */
+.faq {
+	padding: 80px 0;
+	background-color: white;
+}
+
+.faq__title {
+	font-size: 22px;
+	line-height: 26px;
+	color: var(--primary-blue);
+	margin: 0 0 24px 0;
+	font-weight: 700;
+	text-align: center;
+}
+.faq__wrapper {
+	max-width: 762px;
+	margin: 0 auto;
+}
+.faq__accordion {
+	transition: all 0.3s ease;
+	margin: 0 0 24px 0;
+}
+
+.faq__accordion-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	gap: 16px;
+	padding: 0 0 24px 0;
+	cursor: pointer;
+	border-bottom: 1px solid var(--light-blue);
+	transition: all 0.3s ease;
+}
+
+.faq__accordion-title {
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--primary-blue);
+	font-weight: 500;
+	margin: 0;
+	transition: all 0.3s ease;
+}
+
+.faq__plus {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-width: 14px;
+	min-height: 14px;
+}
+
+.faq__plus span {
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: var(--primary-blue);
+	transition: transform 0.3s ease;
+}
+
+.faq__plus span:first-child {
+	transform: rotate(0deg);
+}
+
+.faq__plus span:last-child {
+	transform: rotate(90deg);
+	position: relative;
+	top: -2px;
+}
+
+.faq__accordion-content {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s ease;
+}
+
+.faq__accordion-content p {
+	font-size: 14px;
+	line-height: 16px;
+	color: var(--primary-blue);
+	font-weight: 500;
+}
+
+.faq__accordion.open {
+	padding: 24px;
+	border-radius: 14px;
+	background-color: var(--gray);
+}
+
+.faq__accordion.open .faq__accordion-top {
+	padding: 0;
+	border: none;
+}
+
+.faq__accordion.open .faq__accordion-title {
+	font-weight: 700;
+	margin: 0 0 16px 0;
+}
+
+.faq__accordion.open .faq__accordion-content {
+	max-height: 200px;
+}
+
+.faq__accordion.open .faq__plus span:first-child {
+	transform: rotate(45deg);
+}
+
+.faq__accordion.open .faq__plus span:last-child {
+	transform: rotate(-45deg);
 }
 
 /* footer */
